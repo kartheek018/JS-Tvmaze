@@ -1,0 +1,85 @@
+:root{
+    --color-dark: #323232;
+    --color-light: #E6E8E6;
+    background-size: cover;        
+    background-repeat: no-repeat;
+}
+body{
+    background-image: url(img1.jpg);
+    background-size: cover;        
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.searchBox {
+    background: #2f3640c1;
+    height: 40px;
+    border-radius: 40px;
+}
+::placeholder{
+    color: var(--color-light);
+}
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640c1;
+    transition: 0.4s;
+}
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: #ffffff;
+    background: var(--color-dark);
+    opacity: 0.9;
+}
+.rat{
+    margin-left: 9px;
+    margin-bottom: 0px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gons{
+    margin-left: 9px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ratingClass{
+    margin-left: 9px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
